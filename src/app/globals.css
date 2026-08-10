@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+/* ==========================================================
+   ROOT VARIABLES
+========================================================== */
+
+:root {
+
+  --background: #F8F6F2;
+
+  --surface: #FFFFFF;
+
+  --primary: #111111;
+
+  --secondary: #5E5E5E;
+
+  --gold: #C6A46A;
+
+  --milk: #F3F0EA;
+
+  --border: #DDD7D0;
+
+  --container: 1400px;
+
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+
+  margin:0;
+
+  padding:0;
+
+  box-sizing:border-box;
+
+}
+
+html{
+
+  scroll-behavior:smooth;
+
+}
+
+body{
+
+  background:var(--background);
+
+  color:var(--primary);
+
+  font-family:var(--font-body),sans-serif;
+
+  overflow-x:hidden;
+
+  text-rendering:optimizeLegibility;
+
+  -webkit-font-smoothing:antialiased;
+
+}
+
+/* ==========================================================
+   ELEMENTS
+========================================================== */
+
+img{
+
+  display:block;
+
+  max-width:100%;
+
+}
+
+button{
+
+  font:inherit;
+
+  cursor:pointer;
+
+}
+
+a{
+
+  text-decoration:none;
+
+  color:inherit;
+
+}
+
+section{
+
+  position:relative;
+
+}
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+  font-family:var(--font-heading),serif;
+
+  font-weight:600;
+
+  line-height:1.05;
+
+}
+
+/* IMPORTANT:
+   We DO NOT force headings to be black anymore.
+*/
+
+p{
+
+  color:var(--secondary);
+
+  line-height:1.8;
+
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero-title{
+
+  color:#F3F0EA !important;
+
+  text-shadow:
+
+    0 8px 45px rgba(0,0,0,.95),
+
+    0 0 100px rgba(0,0,0,.55);
+
+}
+
+.hero-subtitle{
+
+  color:rgba(243,240,234,.88);
+
+}
+
+.hero-tag{
+
+  color:#F3F0EA;
+
+}
+
+.hero-overlay{
+
+  background:
+
+    linear-gradient(
+
+      to bottom,
+
+      rgba(0,0,0,.15),
+
+      rgba(0,0,0,.08),
+
+      rgba(0,0,0,.35)
+
+    );
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+  width:min(1400px,92%);
+
+  margin-inline:auto;
+
+}
+
+/* ==========================================================
+   GLASS
+========================================================== */
+
+.glass{
+
+  backdrop-filter:blur(18px);
+
+  -webkit-backdrop-filter:blur(18px);
+
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+  width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+  background:#EFEFEF;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  background:#C6A46A;
+
+  border-radius:100px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+  background:#B89455;
+
+}
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection{
+
+  background:#C6A46A;
+
+  color:white;
+
+}
+
+/* ==========================================================
+   UTILITIES
+========================================================== */
+
+.text-balance{
+
+  text-wrap:balance;
+
+}
