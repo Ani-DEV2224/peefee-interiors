@@ -18,7 +18,7 @@ export default function HeroVideo() {
 
         will-change-transform
       "
-      src="/videos/Hero-Section_video.mp4"
+      src="/videos/New_peefee_interiors_home_hero_section_video.mp4"
       autoPlay
       muted
       loop
